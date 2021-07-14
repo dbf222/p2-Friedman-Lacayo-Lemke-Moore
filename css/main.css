@@ -40,10 +40,72 @@ h5,
 h6 {
   font-family: soleil, sans-serif;
   font-weight: 600;
-  color: #c6712c;
 }
 p {
   font-family: soleil, sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+/*===============================================
+
+
+
+HOME stylesheet
+
+===============================================*/
+#home {
+  padding-top: 5%;
+  background-color: #f1f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#home h2,
+#home h4 {
+  color: #035d6f;
+}
+#home h2 {
+  font-size: 3.5em;
+}
+#home h4 {
+  font-size: 1.7em;
+}
+#home h5 {
+  color: #238e99;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+#home h6 {
+  font-weight: 300;
+  color: #238e99;
+  font-size: 1.05em;
+}
+#home p {
+  color: #302d2e;
+}
+#home .homesection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#home .blogtop {
+  padding-top: 5%;
+}
+#home .blogtop p {
+  font-size: 1.15em;
+}
+#home .blogmiddle {
+  padding-top: 4%;
+}
+#home .Article {
+  padding-top: 4%;
+}
+#home .Article h4,
+#home .Article h5,
+#home .Article p {
+  padding-top: 2%;
+}
+#home #blog {
+  background-color: white;
 }
