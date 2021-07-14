@@ -1,3 +1,4 @@
+/* Colors */
 * {
   margin: 0;
   padding: 0;
@@ -15,4 +16,34 @@ nav,
 section,
 summary {
   display: block;
+}
+@font-face {
+  font-family: soleil, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: ingra-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  color: #c6712c;
+}
+p {
+  font-family: soleil, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
