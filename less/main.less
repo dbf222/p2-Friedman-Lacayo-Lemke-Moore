@@ -229,7 +229,8 @@ FOOTER
 
 footer{
   width: 100%;
-  margin-top: 6%;
+  margin: 6% 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -263,6 +264,7 @@ footer{
       width: 90%;
       margin-top: 10%;
       align-items: center;
+
     }
 .footerleft{
   width: 30%;
@@ -287,6 +289,7 @@ footer .footerleft .footerleft-btm h6 {
 
 .footercenter{
   width: 30%;
+  margin:0 4%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -299,8 +302,44 @@ footer .footerleft .footerleft-btm h6 {
   width: 30%;
   display: flex;
   flex-direction: row;
+
+  ul{
+    li{
+      list-style-type: none;
+      font-size: .7em;
+      font-family: soleil,sans-serif;
+      font-weight: 600;
+      color: @blue;
+
+
+    }
+  }
+
+  .footerright-right{
+    padding-left: 20%;
+  }
+
+}
+
 }
 
 
 
+
+
+
+
+
+/*===============================================
+
+
+
+MEDIA QUERY
+
+===============================================*/
+@media (max-width:560px) {
+
+#footerbottom{
+  flex-direction: column;
+}
 }
