@@ -75,6 +75,7 @@ HOME stylesheet
   }
   h4{
     font-size: 1.7em;
+    text-align: center;
   }
   h5{
     color: @blue;
@@ -132,7 +133,7 @@ align-items: center;
         cursor: pointer;
         font-family: soleil, sans-serif;
         font-weight: 600;
-        font-size: 1.5em;
+        font-size: 1em;
         text-transform: capitalize;
       }
 
@@ -159,6 +160,7 @@ p{
 
 .Article{
   padding-top: 4%;
+
   h4,h5, p{
     padding-top: 2%
   }
@@ -170,6 +172,9 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 80%;
+
+
 }
 
 .blogcontainer{
@@ -179,6 +184,37 @@ flex-direction: column;
 // align-items: center;
 
 }
+
+
+.moreText{
+  display: none;
+}
+
+.text.show-more .moreText{
+  display: inline;
+}
+
+.read-more-btn {
+  text-transform: capitalize;
+  background-color:white;
+  color: @yellow;
+  padding: .25% .5%;
+  margin: .8% 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-size: .7em;
+  text-transform: capitalize;
+
+  .plus{
+    color: @orange;
+  }
+}
+
+
+
 
 
 }
