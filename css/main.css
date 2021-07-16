@@ -111,6 +111,7 @@ HOME stylesheet
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  color: #302d2e;
 }
 #home #hometop form button {
   width: 25%;
@@ -275,8 +276,3 @@ footer .footerright .footerright-right {
 MEDIA QUERY
 
 ===============================================*/
-@media (max-width: 560px) {
-  #footerbottom {
-    flex-direction: column;
-  }
-}
