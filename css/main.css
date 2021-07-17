@@ -181,6 +181,77 @@ HOME stylesheet
 #home .read-more-btn .plus {
   color: #c6712c;
 }
+
+/*===============================================
+
+SUPPORT stylesheet
+
+===============================================*/
+
+
+
+  .support {
+  padding: 50px;
+  background-color: #f1f2f2;
+  background-image: linear-gradient(#f1f2f2, #025D6F);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supportinfo{
+  box-sizing: border-box;
+
+}
+
+.supportboxes {
+  display: flex;
+}
+.supportboxes .col {
+  flex: 2;
+}
+.supportboxes-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 400px) {
+  .supportboxes,
+  .supportboxes-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.supportboxes { 
+  margin: 0;
+}
+.col {
+  background: #f1f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*===============================================
 
 
