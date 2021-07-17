@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'soleil';
+    src: url(SoleilRegular.woff);
+}
+
 /* Nav */
 header {
     background-color: #e8e8e8;
@@ -13,29 +18,27 @@ header {
     width: 100%;
 }
 
-.nav {
-    position: absolute;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background-color:#e8e8e8;
-    width: 100%;
-}
-
 nav ul {
+    font-family: 'soleil-webfont';
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-}
-
-nav li {
-    margin-bottom: 1em;
-    margin-left: 1em;
+    justify-content: space-around;
 }
 
 nav a {
-    color: #025D6F;
+    display: inline-block;
+    padding: 0.5em;
+    color: #238E99;
     text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase ;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo img {
+    width: 40%;
+    margin-top: 15px;
 }
