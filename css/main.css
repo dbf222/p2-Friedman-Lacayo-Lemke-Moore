@@ -222,7 +222,7 @@ SUPPORT stylesheet
   display: flex;
 }
 .supportboxes .col {
-  flex: 2;
+  flex: 2; 
 }
 .supportboxes .col1 {
   flex: 2;
