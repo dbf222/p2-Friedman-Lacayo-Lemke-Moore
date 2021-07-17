@@ -190,18 +190,17 @@ SUPPORT stylesheet
 
 
 
-  .support {
+.support {
   padding: 50px;
   background-color: #f1f2f2;
   background-image: linear-gradient(#f1f2f2, #025D6F);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .supportinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-
 }
 
 .supportboxes {
@@ -215,6 +214,35 @@ SUPPORT stylesheet
   justify-content: space-between;
 }
 
+.supportform{
+  padding: 50px;
+
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+}
+.fullwidth {
+  grid-column: span 2;
+}
+
+.threecol{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 20px;
+}
+
+.submit {
+  grid-column: 2;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.container {
+  margin: 5vw 10vw;
+}
 
 @media (max-width: 400px) {
   .supportboxes,
@@ -234,6 +262,9 @@ SUPPORT stylesheet
   background: #f1f2f2;
   padding: 20px;
 }
+
+
+
 
 
 
