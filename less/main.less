@@ -1,0 +1,340 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
+}
+
+// Soleil light
+@font-face {
+  font-family: soleil,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+// soleil bold
+@font-face {
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+// Ingra CD Regular
+@font-face {
+font-family: ingra-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+
+}
+
+p{
+  font-family: soleil,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+
+
+/*===============================================
+
+
+
+HOME stylesheet
+
+===============================================*/
+
+
+#home{
+  padding-top: 5%;
+  background-color: @gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2, h4{
+    color: @darkblue;
+  }
+  h2{
+    font-size: 3.5em;
+    margin-top: -6%
+  }
+  h4{
+    font-size: 1.7em;
+    text-align: center;
+  }
+  h5{
+    color: @blue;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 1.4em
+  }
+
+  h6{
+    font-weight: 300;
+    color: @blue;
+    font-size: 1.05em
+  }
+p{
+  color: @black;
+}
+
+.homesection{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#hometop{
+  display: flex;
+flex-direction: column;
+align-items: center;
+  padding-bottom: 10%;
+
+  form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+      input[type=email]{
+        width: 80%;;
+        padding:1.2% 2%;
+        margin: .8% 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: @black;
+      }
+
+      button {
+        width: 25%;
+        background-color:@lightblue;
+        color: @darkblue;
+        padding: 1.4% 2%;
+        margin: .8% 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: soleil, sans-serif;
+        font-weight: 600;
+        font-size: 1em;
+        text-transform: capitalize;
+      }
+
+      input[type=email]:hover {
+        background-color:@lightblue;
+      }
+
+      button:hover{
+
+        color: @yellow;
+      }
+
+  }
+}
+
+.blogtop{
+p{
+  font-size: 1.15em
+}
+}
+.blogmiddle{
+  padding-top: 4%;
+}
+
+.Article{
+  padding-top: 4%;
+
+  h4,h5, p{
+    padding-top: 2%
+  }
+}
+
+#blog{
+  background-color: white;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+
+
+}
+
+.blogcontainer{
+  width: 90%;
+display: flex;
+flex-direction: column;
+// align-items: center;
+
+}
+
+
+.moreText{
+  display: none;
+}
+
+.text.show-more .moreText{
+  display: inline;
+}
+
+.read-more-btn {
+  text-transform: capitalize;
+  background-color:white;
+  color: @yellow;
+  padding: .25% .5%;
+  margin: .8% 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: soleil, sans-serif;
+  font-weight: 600;
+  font-size: .7em;
+  text-transform: capitalize;
+
+  .plus{
+    color: @orange;
+  }
+}
+
+
+}
+
+
+
+
+/*===============================================
+
+
+
+FOOTER
+
+===============================================*/
+
+footer{
+  width: 100%;
+  margin: 6% 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footerbuttons{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    button {
+      width: 100%;
+      background-color:@lightblue;
+      color: @darkblue;
+      padding: 1.4% 2%;
+      margin: .8% 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: soleil, sans-serif;
+      font-weight: 600;
+      font-size: 1em;
+      text-transform: capitalize;
+    }
+    button:hover{
+      color: @yellow;
+    }
+
+  }
+  #footerbottom{
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      margin-top: 10%;
+      align-items: center;
+
+    }
+.footerleft{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  .footerleft-top{
+    display: flex;
+    flex-direction: row;
+    img{
+      width: 30%;
+    }
+    p{
+      font-size: .5em;
+      text-align: center;
+    }
+  }
+
+}
+
+footer .footerleft .footerleft-btm h6 {
+    font-size: 0.7em;}
+
+.footercenter{
+  width: 30%;
+  margin:0 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 50%;
+  }
+}
+
+.footerright{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+
+  ul{
+    li{
+      list-style-type: none;
+      font-size: .7em;
+      font-family: soleil,sans-serif;
+      font-weight: 600;
+      color: @blue;
+
+
+    }
+  }
+
+  .footerright-right{
+    padding-left: 20%;
+  }
+
+}
+
+}
+
+
+
+
+
+
+
+
+/*===============================================
+
+
+
+MEDIA QUERY
+
+===============================================*/
