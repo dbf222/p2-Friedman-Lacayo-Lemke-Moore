@@ -75,8 +75,8 @@ nav a:hover {
 /* Mission */
 
 .mission {
-    display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .mission-info {
@@ -85,50 +85,104 @@ nav a:hover {
     font-family: 'Soleil-bold';
     padding: 35px;
     font-size: 1.2rem;
-    margin-top: -27px;
+    margin-top: -30px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 .mission-title {
     font-size: 3rem;
+    color: #025D70;
+    margin-left: 72px;
 }
 
-.container {
-    margin: 30px;
+
+.main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about {
-    margin-top: -46px;
+    margin-top: -106px;
     font-size: 3rem;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     color: #025D70;
 }
 
-
-.box img {
-    width: 170%;
-    margin-left: -57%;
-    margin-top: -12%;
-}
-
-.box {
-    position: absolute;
-    top: 132%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
+.container {
     background-color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-.box .imgBox {
-    width: 150px;
-    flex: 0 0 150px;
+.image {
+    height: 300px;
+    width: 100%;
+    background-image: url(photos/turtle-11-square.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-.box .content {
-    padding-right: 98px;
+.text-container {
+    margin: 60px 45px 55px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 320px) {
+    .about {
+        margin-top: -75px;
+        font-size: 1.8rem;
+        padding-bottom: 20px;
+    }
+
+    .main {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 643px;
+    }
+
+    .mission-info {
+        margin-top: -15px;
+    }
+
+    .mission-title {
+        font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+        flex-direction: row;
+    }
+    .image {
+        min-width: 360px;
+        height: 420px;
+    }
+    .text-container {
+        margin: 0 60px;
+        max-width: 660px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+
+    }
 }
 
 
