@@ -148,10 +148,7 @@ p {
     }
 
     .main {
-        height: 20vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        height: 30vh;
         margin-top: 643px;
     }
 
@@ -161,6 +158,12 @@ p {
 
     .mission-title {
         font-size: 1.8rem;
+}
+
+@media screen and (min-width: 375px) {
+    .main {
+        height: 10vh;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -256,3 +259,5 @@ footer {
     display: flex;
     flex-direction: row;
   }
+
+}
