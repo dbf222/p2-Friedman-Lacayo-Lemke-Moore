@@ -252,6 +252,132 @@ ul {
 HOME stylesheet
 
 ===============================================*/
+
+
+/*========CAROUSEL========*/
+
+.carousel-section1 {
+  text-align: center;
+}
+
+.carousel-section {
+  text-align: center;
+  padding-top: 50px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  left: -100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transform: translateX(100%);
+}
+
+@media (min-width: 30em) {
+  .carousel {
+    left: -50%;
+    transform: translateX(50%);
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel {
+    left: -33.33333%;
+    transform: translateX(33.33333%);
+  }
+}
+
+.carousel.is-reversing {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 30em) {
+  .carousel.is-reversing {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel.is-reversing {
+    transform: translateX(-33.33333%);
+  }
+}
+
+.carousel.is-set {
+  transform: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-seat {
+  flex: 1 0 100%;
+  order: 2;
+}
+
+@media (min-width: 30em) {
+  .carousel-seat {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 40em) {
+  .carousel-seat {
+    flex-basis: 33.33333%;
+  }
+}
+
+.carousel-seat.is-ref {
+  order: 1;
+}
+
+.c-photo img {
+  width: 100%;
+}
+
+.controls button {
+  border: 0;
+  border-radius: 0.25em;
+  color:white;
+  padding: 0.5em 1em;
+}
+
+.controls button:hover,
+.controls button:focus {
+  background #f8b966;
+}
+
+.controls {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -200px;
+}
+
+.toggle {
+  background-color: #00968800;
+  display: flex;
+  justify-content: flex-end;
+}
+.toggle1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+/*======end carousel=====*/
+
+
 #home {
   background-color: #f1f2f2;
   display: flex;
@@ -693,6 +819,7 @@ label{
 
 
 
+
 FOOTER
 
 ===============================================*/
@@ -797,5 +924,30 @@ MEDIA QUERY
   }
   .mobile-menu {
     display: none;;
+  }
+}
+
+
+@media screen and (min-width: 475px) {
+  .controls {
+    top: -150px;
+  }
+}
+
+@media screen and (min-width: 638px) {
+  .controls {
+    top: -130px;
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .controls {
+    top: -150px;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .controls {
+    top: -180px;
   }
 }
