@@ -310,12 +310,12 @@ SUPPORT stylesheet
 
 /**************** Support Info Section *****************/
 .support {
-  padding: 2% 10% 0 10%;
   background-color: #f1f2f2;
   background-image: linear-gradient(#f1f2f2, #025D6F);
 }
 .supportinfo{
   display: flex;
+  padding: 20% 10% 0 10%;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -433,11 +433,35 @@ label{
   color: #f1f2f2;
 }
 
-.support h3{
+/*.support h3{
   font-size: 2rem;
   color: #025D6F;
   padding: 2%;
+  }*/
+          
+  h3.strikearound {
+    font-size: 2rem;
+    color: #025D6F;
+    padding: 2%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
 }
+    h3.strikearound:before, h3.strikearound:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    margin-left: 5%;
+    width: 50%;
+    height: 1.5px;
+    content: '\a0';
+    background-color: #025D6F;
+}
+    h3.strikearound:before {
+    margin-left: -55%;
+    text-align: right;
+}
+
 
 .support h4{
   font-size: 1.65rem;
