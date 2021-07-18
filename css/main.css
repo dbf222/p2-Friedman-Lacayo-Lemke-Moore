@@ -65,7 +65,7 @@ HAMBURGER MENU stylesheet
   right: 1rem;
   width: 3rem;
   height: 3rem;
-  background:#f1f2f2;
+  background:#f1f2f200;
   color: #035d6f;;
   cursor: pointer;
   font-size: 37px;
@@ -158,7 +158,7 @@ header {
   position: fixed;
   z-index: 999;
   width: 100%;
-  position: absolute;
+  position: relative;
 }
 nav ul {
   font-family: 'Soleil';
@@ -184,6 +184,11 @@ nav a:hover {
 
 
 /*Nav Dropdown */
+
+span {
+  position: relative;
+  top: 4px;
+}
 
 ul {
   list-style: none;
@@ -347,6 +352,7 @@ HOME stylesheet
   flex-direction: column;
   align-items: center;
   width: 80%;
+  padding-bottom: 50px;
 }
 #home .blogcontainer {
   width: 90%;
@@ -375,6 +381,7 @@ HOME stylesheet
 #home .read-more-btn .plus {
   color: #c6712c;
 }
+
 /*===============================================
 
 
@@ -493,6 +500,7 @@ SUPPORT stylesheet
   flex: 2;
   background-image: url(../img/turtle-06.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -503,6 +511,7 @@ SUPPORT stylesheet
   flex: 2;
   background-image: url(../img/turtle-14.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -513,6 +522,7 @@ SUPPORT stylesheet
   flex: 2;
   background-image: url(../img/turtle-10.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 400px;
   background-repeat: no-repeat;
@@ -686,6 +696,10 @@ label{
 FOOTER
 
 ===============================================*/
+#footer {
+  padding-top: 50px;
+}
+
 footer {
   width: 100%;
   margin: 6% 0;
@@ -697,6 +711,7 @@ footer .footerbuttons {
   width: 20%;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 footer .footerbuttons button {
   width: 100%;
