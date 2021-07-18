@@ -46,6 +46,111 @@ p {
   font-weight: 300;
   font-style: normal;
 }
+/*===============================================
+
+
+
+HAMBURGER MENU stylesheet
+
+===============================================*/
+
+.desktop-menu {
+  display: none;
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background:#f1f2f2;
+  color: #035d6f;;
+  cursor: pointer;
+  font-size: 37px;
+}
+
+.xIcon {
+  display: none;
+  background: #035d6f;
+  color: #f1f2f2;
+  padding: 12px 0;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background:#035d6f;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  list-style: none;
+  padding-top: 4rem;
+  top: 0;
+}
+
+.showMenu {
+  transform: translateY(0);
+}
+
+li {
+  padding: 1rem 0;
+}
+
+.menuLinks {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-family: soleil,sans-serif;
+  padding-left: 25px;
+  transition: .5s ease-in-out;
+  display: inline-block;
+}
+
+.menu li {
+  text-align: left;
+}
+
+.menuLinks:hover {
+  font-style: italic;
+  color: #C5E2DF;
+  transition: .5s ease-in-out;
+  transform: translateX(-5px);
+  display: inline-block;
+
+}
+
+.menu-logo {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.menu-logo img {
+  width: 100px;
+  display: inline-block;
+  transition: .5s ease-in-out;
+}
+
+.menu-logo img:hover {
+  display:inline-block;
+  transform: translateY(-10px);
+  transition: .5s ease-in-out;
+}
+
+span.material-icons.xIcon {
+  display: none;
+}
+
+span.menuIcon.material-icons {
+  font-size: 30px;
+}
+
+
+
+
+
 /* Nav */
 header {
   background-color: white;
@@ -84,7 +189,6 @@ HOME stylesheet
 
 ===============================================*/
 #home {
-  padding-top: 5%;
   background-color: #f1f2f2;
   display: flex;
   flex-direction: column;
@@ -611,3 +715,13 @@ MEDIA QUERY
 
 ===============================================*/
 /* Media Queries */
+
+
+@media screen and (min-width: 725px) {
+  .desktop-menu {
+    display: contents;
+  }
+  .mobile-menu {
+    display: none;;
+  }
+}
