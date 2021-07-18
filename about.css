@@ -5,21 +5,37 @@
 }
 
 @font-face {
-    font-family: 'soleil';
-    src: url(SoleilRegular.woff);
+    font-family: 'Soleil';
+    src: url(fonts/soleil-webfont/SoleilRegular.woff);
+}
+
+@font-face {
+    font-family: 'Soleil-bold';
+    src: url(fonts/soleil-webfont/SoleilBold.woff);
+}
+
+h1 {
+    font-family: 'Soleil-bold';
+    color: #025D70;
+}
+
+body {
+    font-family: 'Soleil';
+    background-color: #e8e8e8;
 }
 
 /* Nav */
 header {
-    background-color: #e8e8e8;
+    background-color: white;
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+    position: absolute;
 }
 
 nav ul {
-    font-family: 'soleil-webfont';
+    font-family: 'Soleil';
     display: flex;
     list-style: none;
     margin: 0;
@@ -42,3 +58,147 @@ nav a:hover {
     width: 40%;
     margin-top: 15px;
 }
+
+/* Temporary banner image */
+
+.hero-image {
+    background-image: url("photos/turtle-05.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 50%;
+  }
+
+
+/* Mission */
+
+.mission {
+    display: flex;
+    justify-content: center;
+}
+
+.mission-info {
+    color: #CA7B38;
+    background-color: white;
+    font-family: 'Soleil-bold';
+    padding: 35px;
+    font-size: 1.2rem;
+    margin-top: -27px;
+}
+
+.mission-title {
+    font-size: 3rem;
+}
+
+.container {
+    margin: 30px;
+}
+
+.about {
+    margin-top: -46px;
+    font-size: 3rem;
+    padding-bottom: 25px;
+    color: #025D70;
+}
+
+
+.box img {
+    width: 170%;
+    margin-left: -57%;
+    margin-top: -12%;
+}
+
+.box {
+    position: absolute;
+    top: 132%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+}
+
+.box .imgBox {
+    width: 150px;
+    flex: 0 0 150px;
+}
+
+.box .content {
+    padding-right: 98px;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footerbuttons {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerbuttons button {
+    width: 100%;
+    background-color: #c5e2df;
+    color: #035d6f;
+    padding: 1.4% 2%;
+    margin: .8% 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: soleil, sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  footer .footerbuttons button:hover {
+    color: #f8b966;
+  }
+  footer #footerbottom {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 10%;
+    align-items: center;
+  }
+  footer .footerleft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerleft .footerleft-top {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footerleft .footerleft-top img {
+    width: 30%;
+  }
+  footer .footerleft .footerleft-top p {
+    font-size: .5em;
+    text-align: center;
+  }
+  footer footer .footerleft .footerleft-btm h6 {
+    font-size: 0.7em;
+  }
+  footer .footercenter {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .footercenter img {
+    width: 50%;
+  }
+  footer .footerright {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+  }
