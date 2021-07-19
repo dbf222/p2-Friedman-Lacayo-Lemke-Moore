@@ -54,6 +54,20 @@ HAMBURGER MENU stylesheet
 
 ===============================================*/
 
+.mobile-menu {
+  max-height: 120px;
+}
+
+.mobile-logo {
+  text-align: left;
+  padding: 25px 0 10px 20px;
+}
+
+.mobile-logo img {
+  width: 20%;
+  max-width: 94px;
+}
+
 .desktop-menu {
   display: none;
 }
@@ -159,6 +173,7 @@ header {
   z-index: 999;
   width: 100%;
   position: relative;
+  padding-bottom: 10px;
 }
 nav ul {
   font-family: 'Soleil';
@@ -256,14 +271,11 @@ HOME stylesheet
 
 /*========CAROUSEL========*/
 
-.carousel-section1 {
-  text-align: center;
-}
 
 .carousel-section {
   text-align: center;
   padding-top: 50px;
-  max-width: 1100px;
+  max-width: 1090px;
   margin: auto;
 }
 
@@ -289,6 +301,7 @@ HOME stylesheet
     transform: translateX(50%);
   }
 }
+
 
 @media (min-width: 40em) {
   .carousel {
@@ -376,6 +389,23 @@ HOME stylesheet
 
 
 /*======end carousel=====*/
+
+.jumbo-image {
+  padding-bottom: 50px;
+}
+
+.jumbo-image img {
+  width: 100%;
+}
+
+.opening-words {
+    position: absolute;
+    color: white;
+    width: 72%;
+    max-width: 540px;
+    padding: 12% 20px;
+    font-size: 14px;
+}
 
 
 #home {
@@ -611,7 +641,7 @@ SUPPORT stylesheet
 }
 .supportinfo{
   display: flex;
-  padding: 20% 10% 0 10%;
+  padding: 75px 10% 0 10%;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -918,6 +948,40 @@ MEDIA QUERY
 /* Media Queries */
 
 
+@media screen and (min-width: 320px) {
+  .controls {
+    top: -170px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .controls {
+    top: -190px;
+  }
+  .opening-words {
+    font-size: 20px;
+    max-width: 353px;
+  }
+}
+
+
+@media screen and (min-width: 475px) {
+  .controls {
+    top: -150px;
+  }
+
+}
+
+@media screen and (min-width: 638px) {
+  .controls {
+    top: -130px;
+  }
+  .opening-words {
+    font-size: 24px;
+    max-width: 60%;
+  }
+}
+
 @media screen and (min-width: 725px) {
   .desktop-menu {
     display: contents;
@@ -927,16 +991,11 @@ MEDIA QUERY
   }
 }
 
-
-@media screen and (min-width: 475px) {
-  .controls {
-    top: -150px;
-  }
-}
-
-@media screen and (min-width: 638px) {
-  .controls {
-    top: -130px;
+@media screen and (min-width: 740px) {
+  .opening-words {
+    font-size: 28px;
+    max-width: 500px;
+    padding-left: 10%;
   }
 }
 
@@ -951,3 +1010,7 @@ MEDIA QUERY
     top: -180px;
   }
 }
+
+
+
+
