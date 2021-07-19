@@ -639,6 +639,18 @@ SUPPORT stylesheet
   background-color: #f1f2f2;
   background-image: linear-gradient(#f1f2f2, #025D6F);
 }
+
+.support-words h1 {
+  font-size: 70px;
+}
+
+.support-words h3 {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 200;
+  max-width: 475px;
+}
+
 .supportinfo{
   display: flex;
   padding: 75px 10% 0 10%;
@@ -1008,6 +1020,29 @@ MEDIA QUERY
 @media screen and (min-width: 920px) {
   .controls {
     top: -180px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .support-words {
+    font-size: 24px;
+    padding-left: 5%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .support-words h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .support-words h1 {
+    font-size: 35px;
+  }
+  .support-words h3 {
+    font-size: 15px;
   }
 }
 
